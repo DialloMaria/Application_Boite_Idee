@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+
+margin: 0;
+background-color: #FFFFFE;
+height: inherit;
+}
+header{
+display: flex;
+background-color: #68020F;
+}
+.nav_bar {
+display: flex;
+gap: 80px;
+justify-content: center;
+margin-left: 1000px;
+margin-top: 40px;
+
+}
+.nav_bar a {
+text-decoration: none;
+color:aliceblue;
+
+}
+.icone {
+margin-bottom: 10px;
+margin-top: 40px;
+margin-left: 50px;
+vertical-align: middle;
+
+}
+.icone a {
+text-decoration: none;
+color:aliceblue;
+
+}
+.banner{
+height: 800px;
+margin-top: 0;
+background-image: url("images/Image\ collée 3\.png")  ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+.banner h1{
+   margin-left: 60px;
+color: #FFFFFE;
+margin-bottom: 200px;
+font-size: 36px;
+margin-top: 0;
+padding-top: 300px;
+}
+.categorie h1{
+text-align: center;
+font-size: 80px;
+}
+button {
+  margin-left: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #F21137;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+button:hover {
+  background: #F21137;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+button a {
+    text-decoration: none;
+    color: #FFFFFE;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 280px;
+  max-height: 330px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-image-container {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-icon {
+  font-size: 40px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #1797b8;
+  cursor: default;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.card-des {
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  margin: 0;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #1797b8;
+  cursor: default;
+}
+
+
+</style>
+
+<body>
+
+<header>
+    <div class="icone">
+        <img src="images/Image collée 1.png" alt="" width="50px ">
+        <a href="index.php">Boite_idee</a>
+    </div>
+    <div class="nav_bar">
+        <div><a href="Application.html"><h2>ACCUEIL</h2></a></div>
+        <div><a href="idées.php"><h2>NOS IDEES</h2></a></div>
+        <div><a href=""><h2>DECONNEXION</h2></a></div>
+    </div>
+</header>
+<div class="banner"> 
+     <h1>Les idées illuminent notre parcours et <br> enrichissent notre compréhension du monde qui nous entoure.</h1>
+     <button><a href="utilisateurs.php">S'inscrire</a></button>
+</div>
+
+<section class="categorie">
+    <h1>Les type de categorie</h1>
+
+    
+</section>
+
+</body>
+</html>

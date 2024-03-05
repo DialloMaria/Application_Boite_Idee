@@ -25,6 +25,7 @@
             header("location:showIdee.php?message=Ajout Reussi");
         }
     }
+    require_once 'addIdee.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,11 +33,71 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="style.css">
+    
 </head>
+<style>
+    .form {
+    width: 400px;
+   
+    
+    padding: 20px;   
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #68020F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #F21137;
+}
+
+.link.back {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #F21137;
+    text-decoration: none;
+}
+
+.link.back:hover {
+    text-decoration: underline;
+}
+.banner{
+    background-image: url("images/Image\ collée 3\.png");
+}
+
+</style>
 <body>
   
-   <form action="" method="post">
+   <form  class="form" action="" method="post">
        <h1>Ajoutez vos idées</h1>
            <label for="Libelle">Libellé:</label>
            <input type="text" name="Libelle" >
@@ -53,7 +114,9 @@
        <a class="link back" href="showIdee.php"> Annulez</a>
    </form>
 
-
+<div class="banner">
+     
+</div>
 
 
 </body>
