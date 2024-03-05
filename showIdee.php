@@ -6,11 +6,10 @@
     <title>Liste des idées</title>
     <link rel="stylesheet" href="style.css">
     <?php
-    require_once 'navbar0.html';
+    require_once 'navbar.html';
     ?>
 </head>
 <body>
-    
     <main class="tout"> 
         <div class="link_container">
             <a href="addIdee.php"><h1>Ajoutez vos Idées</h1></a>
