@@ -10,7 +10,7 @@
     ?>
 </head>
 <body>
-    <main class="tout"> 
+    <main class="tout">
         <div class="link_container">
             <a href="addIdee.php"><h1>Ajoutez vos Idées</h1></a>
         </div>
@@ -48,8 +48,7 @@
                     echo "<tr><td colspan='4'>Aucune idée trouvée !</td></tr>";
                 }
                 mysqli_close($connexion);
-
-                
+  
             ?>
             </tbody>
         </table>

@@ -19,7 +19,7 @@ if ($stmt) {
     if(mysqli_stmt_execute($stmt)) {
         header("location:showIdee.php");
     } else {
-        header("location:showIdee.php");
+        header("location:=  showIdee.php");
     }
  
 } 
